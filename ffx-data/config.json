@@ -2,7 +2,11 @@
   "logo": null,
   "ffBanner": null,
   "ffPackages": null,
-  "banners": null,
+  "banners": [
+    "banner-1793911841406-3233.jpg",
+    "default:Banner 2.jpg",
+    "default:Banner 3.jpg"
+  ],
   "quick": [
     {
       "label": "Telegram",
