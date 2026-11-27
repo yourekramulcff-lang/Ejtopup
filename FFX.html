@@ -781,6 +781,134 @@ html,body,.pk,.po,.btn,.pay,.q,.card,.nav a,.pv-back{touch-action:manipulation}
 .ac-mi .go{margin-left:auto;color:#94a3b8;font-size:17px}
 .ac-mi.out{color:#b42318}
 .ac-mi.out .mi{background:#fee4e2;color:#b42318}
+
+/* ===== LOGIN PAGE ===== */
+#lgView{padding-left:10px;padding-right:10px;padding-bottom:130px}
+.lg-hero{position:relative;margin-top:16px;padding:26px 20px 22px;border-radius:32px;overflow:hidden;color:#fff;background:radial-gradient(120% 90% at 100% 0%,#3b82f6 0%,rgba(59,130,246,0) 55%),linear-gradient(145deg,#0a1640 0%,#12308f 50%,#1d4ed8 100%);box-shadow:0 30px 60px -28px rgba(29,78,216,.9),inset 0 1px 0 rgba(255,255,255,.25)}
+.lg-hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:26px 26px;-webkit-mask-image:radial-gradient(80% 80% at 80% 20%,#000,transparent);mask-image:radial-gradient(80% 80% at 80% 20%,#000,transparent)}
+.lg-orb{position:absolute;border-radius:50%;filter:blur(30px);pointer-events:none}
+.lg-orb.o1{width:170px;height:170px;right:-40px;top:-50px;background:rgba(147,197,253,.55)}
+.lg-orb.o2{width:140px;height:140px;left:-50px;bottom:-60px;background:rgba(96,165,250,.45)}
+.lg-eye{position:relative;display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border-radius:99px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font-size:10.5px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:#dbeafe}
+.lg-eye i{width:8px;height:8px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 0 rgba(74,222,128,.7);animation:lgPulse 1.8s infinite}
+@keyframes lgPulse{70%{box-shadow:0 0 0 8px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+.lg-hero h1{position:relative;margin-top:16px;font-size:38px;line-height:1.02;font-weight:900;letter-spacing:-1.4px;color:#fff}
+.lg-hero h1 span{display:block;background:linear-gradient(100deg,#bfdbfe 0%,#fff 30%,#93c5fd 55%,#fff 80%,#bfdbfe 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:lgShine 4s linear infinite}
+@keyframes lgShine{to{background-position:-220% 0}}
+.lg-hero p{position:relative;margin-top:12px;max-width:58%;font-size:13.5px;line-height:1.65;color:rgba(255,255,255,.8)}
+.lg-chips{position:relative;display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.lg-chips span{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:99px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);font-size:12px;font-weight:700;color:#e0ecff}
+.lg-chips svg{font-size:14px;color:#93c5fd}
+.lg-emb{position:absolute;right:18px;top:74px;width:132px;height:132px;display:grid;place-items:center}
+.lg-emb .r{position:absolute;inset:0;border-radius:50%;border:1.5px dashed rgba(255,255,255,.4);animation:lgSpin 18s linear infinite}
+.lg-emb .r.r2{inset:16px;border:1.5px solid rgba(147,197,253,.5);border-top-color:transparent;border-bottom-color:transparent;animation-duration:9s;animation-direction:reverse}
+@keyframes lgSpin{to{transform:rotate(360deg)}}
+.lg-emb .core{position:relative;width:70px;height:70px;border-radius:24px;display:grid;place-items:center;font-size:34px;color:#fff;background:linear-gradient(145deg,rgba(255,255,255,.34),rgba(255,255,255,.08));border:1px solid rgba(255,255,255,.5);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 18px 34px -12px rgba(0,0,20,.6),inset 0 1px 0 rgba(255,255,255,.6);animation:lgFloat 3.4s ease-in-out infinite}
+.lg-emb .core svg{stroke-width:1.6;filter:drop-shadow(0 4px 8px rgba(0,0,40,.4))}
+@keyframes lgFloat{50%{transform:translateY(-7px)}}
+.lg-emb .dot{position:absolute;width:30px;height:30px;border-radius:10px;display:grid;place-items:center;font-size:16px;color:var(--v);background:#fff;box-shadow:0 8px 16px -6px rgba(0,0,40,.55)}
+.lg-emb .dot.d1{top:2px;right:6px}.lg-emb .dot.d2{bottom:6px;left:0}
+
+/* ===== ADD MONEY PAGE ===== */
+#amView{padding-left:10px;padding-right:10px;padding-bottom:130px}
+.am-card{position:relative;margin-top:16px;padding:22px 20px 20px;border-radius:28px;overflow:hidden;color:#fff;background:radial-gradient(110% 90% at 0% 0%,#60a5fa 0%,rgba(96,165,250,0) 55%),linear-gradient(135deg,#0b1a4a 0%,#1e40af 55%,#2563eb 100%);box-shadow:0 26px 50px -26px rgba(29,78,216,.95),inset 0 1px 0 rgba(255,255,255,.28)}
+.am-card:after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-70px;bottom:-110px;border:30px solid rgba(255,255,255,.07)}
+.am-row{position:relative;display:flex;align-items:center;justify-content:space-between}
+.am-chip{width:44px;height:32px;border-radius:8px;background:linear-gradient(135deg,#fde68a,#f59e0b);box-shadow:inset 0 0 0 1px rgba(0,0,0,.15);position:relative}
+.am-chip:before{content:"";position:absolute;inset:6px 8px;border-radius:4px;border:1.5px solid rgba(120,53,15,.45)}
+.am-tag{display:inline-flex;align-items:center;gap:6px;padding:6px 11px;border-radius:99px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#dbeafe}
+.am-tag svg{font-size:13px}
+.am-lb{position:relative;margin-top:22px;font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,.7)}
+.am-bal{position:relative;margin-top:4px;font-size:42px;font-weight:900;letter-spacing:-1.5px;line-height:1.1}
+.am-bal small{font-size:24px;font-weight:800;margin-left:3px;opacity:.9}
+.am-ow{position:relative;margin-top:16px;font-size:13px;font-weight:600;letter-spacing:.5px;color:rgba(255,255,255,.78)}
+
+.am-box{margin-top:16px;padding:18px 16px;border-radius:26px;background:#fff;border:1px solid var(--bd);box-shadow:0 18px 40px -28px rgba(37,99,235,.6)}
+.am-h{display:flex;align-items:center;gap:12px}
+.am-h .ic{width:44px;height:44px;border-radius:14px;background:var(--g);color:#fff;display:grid;place-items:center;font-size:22px;flex-shrink:0;box-shadow:0 10px 18px -10px rgba(37,99,235,.9)}
+.am-h b{display:block;font-size:17.5px;font-weight:800;letter-spacing:-.3px}
+.am-h small{display:block;margin-top:2px;font-size:12.5px;color:var(--mu)}
+.am-in{display:flex;align-items:center;gap:8px;margin-top:16px;padding:6px 8px 6px 16px;border-radius:18px;background:#f5f8ff;border:1.5px solid #c7d8fb;transition:.2s}
+.am-in:focus-within{border-color:var(--v);background:#fff;box-shadow:0 0 0 4px rgba(37,99,235,.12)}
+.am-in .tk{font-size:26px;font-weight:800;color:var(--v)}
+.am-in input{flex:1;min-width:0;width:100%;height:54px;border:0;outline:0;background:transparent;font-family:inherit;font-size:24px;font-weight:800;color:var(--tx)}
+.am-in input::placeholder{font-size:16px;font-weight:500;color:#9aa6c4}
+.am-qk{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.am-qk button{height:42px;border-radius:12px;border:1.5px solid var(--bd);background:#fff;font-family:inherit;font-size:14.5px;font-weight:800;color:#1e3a8a;cursor:pointer;transition:.15s}
+.am-qk button.on{background:var(--g);border-color:transparent;color:#fff;box-shadow:0 8px 16px -8px rgba(37,99,235,.9)}
+.am-qk button:active{transform:scale(.96)}
+.am-lbl{margin-top:18px;font-size:12px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--mu)}
+.am-mt{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.am-mt button{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 4px;border-radius:16px;border:1.5px solid var(--bd);background:#fff;font-family:inherit;font-size:13.5px;font-weight:800;color:var(--tx);cursor:pointer;transition:.15s}
+.am-mt button i{width:34px;height:34px;border-radius:11px;background:var(--c);display:block}
+.am-mt button.on{border-color:var(--v);background:#eff6ff;box-shadow:0 0 0 3px rgba(37,99,235,.14)}
+.am-mt button.on:after{content:"✓";position:absolute;top:-7px;right:-5px;width:20px;height:20px;border-radius:50%;background:var(--v);color:#fff;font-size:12px;display:grid;place-items:center}
+.am-ok{display:flex;align-items:center;gap:8px;margin-top:14px;font-size:13px;color:var(--mu)}
+.am-ok svg{font-size:18px;color:#16a34a;flex-shrink:0}
+.am-go{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;height:56px;margin-top:16px;border:0;border-radius:18px;background:var(--g);color:#fff;font-family:inherit;font-size:17px;font-weight:800;cursor:pointer;box-shadow:0 16px 28px -14px rgba(37,99,235,.95);transition:transform .15s}
+.am-go:active{transform:scale(.98)}
+.am-go svg{font-size:20px}
+.am-lg{display:none;align-items:center;gap:10px;margin-top:14px;padding:12px 14px;border-radius:14px;background:#eff6ff;border:1px solid #bfdbfe;font-size:13.5px;color:#1e3a8a;font-weight:600}
+.am-lg svg{font-size:20px;color:var(--v);flex-shrink:0}
+
+.am-att{margin-top:16px;padding:16px;border-radius:22px;background:linear-gradient(135deg,#fffbeb,#fef3c7);border:1px solid #fcd34d}
+.am-att .t{display:flex;align-items:center;gap:10px}
+.am-att .t i{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,#fbbf24,#f97316);color:#fff;display:grid;place-items:center;font-size:19px;flex-shrink:0}
+.am-att .t b{font-size:16px;font-weight:800;color:#92400e}
+.am-att p{margin-top:10px;font-size:14px;line-height:1.7;color:#78350f}
+
+.am-st{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}
+.am-st div{padding:14px 6px;border-radius:18px;background:#fff;border:1px solid var(--bd);text-align:center}
+.am-st i{width:40px;height:40px;margin:0 auto;border-radius:13px;background:#dbeafe;color:var(--v);display:grid;place-items:center;font-size:20px}
+.am-st b{display:block;margin-top:8px;font-size:14px;font-weight:800}
+.am-st small{display:block;margin-top:2px;font-size:11.5px;color:var(--mu)}
+.am-sf{display:flex;align-items:center;gap:14px;margin-top:12px;padding:15px;border-radius:20px;background:#f0fdf4;border:1px solid #bbf7d0}
+.am-sf i{width:42px;height:42px;border-radius:13px;background:#16a34a;color:#fff;display:grid;place-items:center;font-size:22px;flex-shrink:0}
+.am-sf b{display:block;font-size:15.5px;font-weight:800;color:#166534}
+.am-sf small{display:block;margin-top:2px;font-size:12.5px;line-height:1.5;color:#4b6355}
+.am-tut{display:flex;align-items:center;gap:14px;margin-top:12px;padding:14px;border-radius:20px;background:#fff;border:1px solid var(--bd)}
+.am-tut i{width:46px;height:46px;border-radius:14px;background:#ef4444;color:#fff;display:grid;place-items:center;font-size:23px;flex-shrink:0}
+.am-tut b{display:block;font-size:15px;font-weight:800}
+.am-tut small{display:block;margin-top:2px;font-size:12.5px;color:var(--mu)}
+.am-tut .go{margin-left:auto;color:var(--v);font-size:20px}
+@media(max-width:360px){.am-bal{font-size:36px}.am-in input{font-size:21px}}
+.lg-card{margin-top:16px;padding:14px;border-radius:28px;background:#fff;border:1px solid var(--bd);box-shadow:0 18px 40px -26px rgba(37,99,235,.55)}
+.lg-top{display:flex;align-items:center;justify-content:center;gap:14px;padding:16px;border-radius:20px;background:#eff6ff;border:1px solid var(--bd)}
+.lg-top .ic{width:54px;height:54px;border-radius:17px;background:var(--g);color:#fff;display:grid;place-items:center;font-size:27px;box-shadow:0 12px 22px -10px rgba(37,99,235,.8);flex-shrink:0}
+.lg-top b{display:block;font-size:19px;font-weight:800;letter-spacing:-.4px}
+.lg-top small{display:block;margin-top:3px;font-size:13px;color:var(--mu)}
+.lg-g{display:flex;align-items:center;gap:14px;width:100%;margin-top:14px;padding:12px;border-radius:20px;background:#fff;border:1.5px solid #bfdbfe;cursor:pointer;font-family:inherit;text-align:left;color:var(--tx);transition:transform .15s}
+.lg-g:active{transform:scale(.98)}
+.lg-g .gi{width:46px;height:46px;border-radius:13px;background:#fff;border:1px solid var(--bd);display:grid;place-items:center;flex-shrink:0}
+.lg-g .gi svg{width:26px;height:26px}
+.lg-g .tx{flex:1;min-width:0}
+.lg-g b{display:block;font-size:16.5px;font-weight:800}
+.lg-g small{display:block;margin-top:2px;font-size:13px;color:var(--mu)}
+.lg-g .go{width:40px;height:40px;border-radius:12px;background:#dbeafe;color:var(--v);display:grid;place-items:center;font-size:20px;flex-shrink:0}
+.lg-ft{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px;text-align:center}
+.lg-ft .f i{width:46px;height:46px;margin:0 auto;border-radius:50%;background:#dbeafe;color:var(--v);display:grid;place-items:center;font-size:21px}
+.lg-ft b{display:block;margin-top:8px;font-size:15px;font-weight:800}
+.lg-ft small{display:block;margin-top:2px;font-size:12px;color:var(--mu)}
+.lg-safe{display:flex;align-items:center;gap:14px;margin-top:18px;padding:14px;border-radius:18px;background:#eff6ff;border:1px solid var(--bd)}
+.lg-safe .ck{width:40px;height:40px;border-radius:12px;background:var(--g);color:#fff;display:grid;place-items:center;font-size:21px;flex-shrink:0}
+.lg-safe b{display:block;font-size:15px;font-weight:800;color:var(--v)}
+.lg-safe small{display:block;margin-top:2px;font-size:12.5px;color:var(--mu)}
+.lg-foot{margin-top:14px;text-align:center;font-size:13px;color:var(--mu)}
+
+.lg-info{margin-top:26px;padding:0 6px}
+.lg-info h3{font-size:19px;font-weight:800;letter-spacing:-.4px}
+.lg-info .sub{margin-top:4px;font-size:15px;font-weight:700;color:#334155}
+.lg-nt{margin-top:14px;font-size:14px;line-height:1.75;color:var(--mu)}
+.lg-nt b{color:var(--tx)}
+.lg-tg{display:inline-flex;align-items:center;gap:12px;margin-top:14px;padding:14px 22px;border-radius:16px;background:#fff;border:1px solid var(--bd);font-size:16px;font-weight:600;box-shadow:0 8px 20px -14px rgba(20,40,90,.4)}
+.lg-tg svg{font-size:22px;color:var(--v)}
+.lg-info h2{margin-top:26px;font-size:26px;font-weight:900;letter-spacing:-.8px}
+.lg-help{display:flex;align-items:center;gap:14px;margin-top:14px;padding:16px;border-radius:20px;background:#fff;border:1px solid var(--bd);box-shadow:0 10px 24px -16px rgba(20,40,90,.4)}
+.lg-help .ti{width:46px;height:46px;border-radius:50%;background:#0a8fd6;color:#fff;display:grid;place-items:center;font-size:23px;flex-shrink:0}
+.lg-help b{display:flex;align-items:center;gap:6px;font-size:17px;font-weight:800}
+.lg-help p{margin-top:3px;font-size:14px;color:var(--mu)}
+.lg-help .vb{width:19px;height:19px}
+@media(max-width:360px){.lg-hero h1{font-size:33px}.lg-emb{transform:scale(.82);right:6px}.lg-hero p{max-width:54%}}
 </style>
 </head>
 <body>
@@ -823,7 +951,7 @@ html,body,.pk,.po,.btn,.pay,.q,.card,.nav a,.pv-back{touch-action:manipulation}
   <div class="wrap hd">
     <a class="logo" href="#"><img src="Main logo.jpg" alt="Nickname" data-site-logo></a>
     <div class="hr">
-      <a class="wallet" href="#"><svg class="i"><use href="#wal"/></svg>0৳</a>
+      <a class="wallet" href="#add-money"><svg class="i"><use href="#wal"/></svg>0৳</a>
       <a class="avatar" href="#account" id="avBtn" aria-label="Profile"><div class="av-inner"><svg class="i"><use href="#user"/></svg></div></a>
     </div>
   </div>
@@ -1444,6 +1572,95 @@ html,body,.pk,.po,.btn,.pay,.q,.card,.nav a,.pv-back{touch-action:manipulation}
   <div class="ct-note"><svg class="i"><use href="#info"/></svg><div>অর্ডার-সংক্রান্ত সমস্যায় অর্ডারের স্ক্রিনশট ও পেমেন্টের ট্রানজেকশন আইডি সহ মেসেজ দিন।</div></div>
 </main>
 
+<!-- ADD MONEY PAGE -->
+<main class="wrap" id="amView" hidden>
+  <section class="am-card">
+    <div class="am-row"><span class="am-chip"></span><span class="am-tag"><svg class="i"><use href="#bolt"/></svg>Instant &amp; Secure</span></div>
+    <div class="am-lb">Wallet Balance</div>
+    <div class="am-bal"><span id="amBal">0</span><small>৳</small></div>
+    <div class="am-ow"><span data-site-name>Nickname</span> Wallet</div>
+  </section>
+
+  <section class="am-box">
+    <div class="am-h"><span class="ic"><svg class="i"><use href="#wal"/></svg></span><span><b>Add Money</b><small>কত টাকা যোগ করতে চান লিখুন</small></span></div>
+    <div class="am-in"><span class="tk">৳</span><input id="amInp" type="text" inputmode="numeric" autocomplete="off" placeholder="Enter amount" maxlength="6"></div>
+    <div class="am-qk" id="amQk">
+      <button type="button" data-v="50">৳ 50</button><button type="button" data-v="100">৳ 100</button><button type="button" data-v="200">৳ 200</button>
+      <button type="button" data-v="500">৳ 500</button><button type="button" data-v="1000">৳ 1000</button><button type="button" data-v="2000">৳ 2000</button>
+    </div>
+    <div class="am-ok"><svg class="i"><use href="#chk"/></svg>টাকা সরাসরি আপনার ওয়ালেটে যোগ হবে</div>
+    <div class="am-lg" id="amLg"><svg class="i"><use href="#user"/></svg>টাকা যোগ করতে আগে লগইন করুন</div>
+    <button class="am-go" type="button" id="amGo"><svg class="i"><use href="#shield"/></svg><span id="amGoTx">Add Money Securely</span><svg class="i"><use href="#arr"/></svg></button>
+  </section>
+
+  <section class="am-att">
+    <div class="t"><i><svg class="i"><use href="#warn"/></svg></i><b>Attention</b></div>
+    <p>বিকাশ, নগদ কিংবা QR কোডে টাকা পাঠানোর আগে অবশ্যই নম্বরটি ভালোভাবে যাচাই করে নিন। কারণ প্রতি ঘণ্টায় নম্বর পরিবর্তন হয়।</p>
+  </section>
+
+  <section class="am-st">
+    <div><i><svg class="i"><use href="#bolt"/></svg></i><b>Instant</b><small>Quick balance update</small></div>
+    <div><i><svg class="i"><use href="#shield"/></svg></i><b>Secure</b><small>Protected payment</small></div>
+    <div><i><svg class="i"><use href="#head"/></svg></i><b>Support</b><small>Help when needed</small></div>
+  </section>
+  <div class="am-sf"><i><svg class="i"><use href="#chk"/></svg></i><span><b>100% Safe &amp; Secure</b><small>Your payment is encrypted and handled through trusted payment partners.</small></span></div>
+  <a class="am-tut" href="#" data-link="youtube-channel"><i><svg class="f"><use href="#yt"/></svg></i><span><b>কিভাবে টাকা অ্যাড করবেন?</b><small>ভিডিও টিউটোরিয়াল দেখুন</small></span><svg class="i go"><use href="#arr"/></svg></a>
+</main>
+
+<!-- LOGIN PAGE -->
+<main class="wrap" id="lgView" hidden>
+  <section class="lg-hero">
+    <span class="lg-orb o1"></span><span class="lg-orb o2"></span>
+    <span class="lg-eye"><i></i>Secure Account Access</span>
+    <h1>Welcome<span>Back</span></h1>
+    <p>Fast, secure and simple access to your <span data-site-name style="display:inline;background:none;-webkit-text-fill-color:#fff;color:#fff;animation:none;font-weight:800">Nickname</span> account.</p>
+    <div class="lg-chips">
+      <span><svg class="i"><use href="#shield"/></svg>100% Safe</span>
+      <span><svg class="i"><use href="#bolt"/></svg>Instant</span>
+    </div>
+    <div class="lg-emb">
+      <i class="r"></i><i class="r r2"></i>
+      <div class="core"><svg class="i"><use href="#shield"/></svg></div>
+      <span class="dot d1"><svg class="i"><use href="#user"/></svg></span>
+      <span class="dot d2"><svg class="i"><use href="#chk"/></svg></span>
+    </div>
+  </section>
+
+  <section class="lg-card">
+    <div class="lg-top">
+      <span class="ic"><svg class="i"><use href="#shield"/></svg></span>
+      <span><b>Sign in to continue</b><small>Access your account securely</small></span>
+    </div>
+    <button class="lg-g" type="button" id="lgGoogle">
+      <span class="gi"><svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.5l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17.5z"/><path fill="#FBBC05" d="M10.5 28.7a14.5 14.5 0 0 1 0-9.4l-7.9-6.1a24 24 0 0 0 0 21.6l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.8 2.3-8.4 2.3-6.3 0-11.6-4.100-13.500-9.800l-7.9 6.100C6.500 42.600 14.600 48 24 48z"/></svg></span>
+      <span class="tx"><b>Continue with Google</b><small>Quick and secure sign in</small></span>
+      <span class="go"><svg class="i"><use href="#arr"/></svg></span>
+    </button>
+    <div class="lg-ft">
+      <div class="f"><i><svg class="i"><use href="#bolt"/></svg></i><b>Fast</b><small>Instant access</small></div>
+      <div class="f"><i><svg class="i"><use href="#chk"/></svg></i><b>Secure</b><small>Safe login</small></div>
+      <div class="f"><i><svg class="i"><use href="#shield"/></svg></i><b>Trusted</b><small>Easy &amp; reliable</small></div>
+    </div>
+    <div class="lg-safe">
+      <span class="ck"><svg class="i"><use href="#chk"/></svg></span>
+      <span><b>Your data is safe</b><small>Secure authentication protects your account.</small></span>
+    </div>
+  </section>
+  <p class="lg-foot">Secure login · Stay connected with <span data-site-name>Nickname</span></p>
+
+  <section class="lg-info">
+    <h3>Games TopUp</h3>
+    <div class="sub">Fast, Safe &amp; Reliable Game Top-Up</div>
+    <div class="lg-nt"><b>নোটিশ:</b><br>যেকোনো অর্ডার-সংক্রান্ত সমস্যার জন্য Telegram-এ অর্ডারের স্ক্রিনশট এবং পেমেন্টের ট্রানজেকশন আইডি লিখে মেসেজ দিন।<br><b>বিশেষ সতর্কতা:</b> ১৮ বছরের নিচে অভিভাবকের অনুমতি ছাড়া অর্ডার করা সম্পূর্ণ নিষিদ্ধ।</div>
+    <a class="lg-tg" href="#" data-link="telegram-channel"><svg class="i"><use href="#tg"/></svg>Telegram</a>
+    <h2>Contact Us</h2>
+    <a class="lg-help" href="#" data-link="telegram-channel">
+      <span class="ti"><svg class="f"><use href="#tg"/></svg></span>
+      <span><b>Telegram HelpLine <svg class="vb" viewBox="0 0 24 24"><use href="#ok"/></svg></b><p>সকাল ৮টা থেকে রাত ১২টা</p></span>
+    </a>
+  </section>
+</main>
+
 <!-- MY TRANSACTION PAGE -->
 <main class="wrap" id="trView" hidden>
   <section class="tr-box">
@@ -2009,7 +2226,7 @@ setInterval(fetchFreshAccountConfig, 15000);
     email: '',                // যেমন: 'eacin69x@gmail.com'
     avatar: ''                // প্রোফাইল ছবির লিংক (ফাঁকা থাকলে ডিফল্ট আইকন)
   };
-  var LOGIN_URL = '#';
+  var LOGIN_URL = '#login';
   var LOGOUT_URL = '#';
 
   var panel = document.getElementById('accPanel');
@@ -2068,7 +2285,7 @@ setInterval(fetchFreshAccountConfig, 15000);
   if (navAcc) navAcc.addEventListener('click', function(e){ e.preventDefault(); openAcc(); });
 
   // মেনু আইটেমে ক্লিক: এখানে নিজের পেজের লিংক বসান
-  var PAGES = { account:'#', orders:'#', codes:'#', transaction:'#', addmoney:'#' };
+  var PAGES = { account:'#', orders:'#', codes:'#', transaction:'#', addmoney:'#add-money' };
   document.querySelectorAll('.acc-it[data-go]').forEach(function(a){
     a.addEventListener('click', function(e){
       var go = a.getAttribute('data-go');
@@ -2092,16 +2309,18 @@ setInterval(fetchFreshAccountConfig, 15000);
 (function(){
   // লগইন সিস্টেম যুক্ত করলে এটা true করে দিন
   var isLoggedIn=false;
-  var LOGIN_URL='#';
+  var LOGIN_URL='#login';
 
   var home=document.getElementById('homeView'), ff=document.getElementById('ffView'), foot=document.getElementById('siteFooter');
   var sel={name:'',price:0,pay:'Wallet Pay'};
   var toastEl=document.getElementById('toast'), tt;
   function toast(m){toastEl.textContent=m;toastEl.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toastEl.classList.remove('show')},2400)}
   function route(){
-    var onFF=location.hash==='#ff-likes', onUid=location.hash==='#uid-topup', onWm=location.hash==='#weekly-monthly', onWl=location.hash==='#weekly-lite', onLu=location.hash==='#level-up-pass', onIn=location.hash==='#indonesia-server', onOr=location.hash==='#my-orders', onCd=location.hash==='#my-codes', onAc=location.hash==='#account', onTr=location.hash==='#my-transaction', onCt=location.hash==='#contact-us', onUc=location.hash==='#uid-checker';
-    home.hidden=onFF||onUid||onWm||onWl||onLu||onIn||onOr||onCd||onAc||onTr||onCt||onUc; foot.hidden=onFF||onUid||onWm||onWl||onLu||onIn||onOr||onCd||onAc||onTr||onCt||onUc;
+    var onFF=location.hash==='#ff-likes', onUid=location.hash==='#uid-topup', onWm=location.hash==='#weekly-monthly', onWl=location.hash==='#weekly-lite', onLu=location.hash==='#level-up-pass', onIn=location.hash==='#indonesia-server', onOr=location.hash==='#my-orders', onCd=location.hash==='#my-codes', onAc=location.hash==='#account', onTr=location.hash==='#my-transaction', onCt=location.hash==='#contact-us', onUc=location.hash==='#uid-checker', onLg=location.hash==='#login', onAm=location.hash==='#add-money';
+    home.hidden=onFF||onUid||onWm||onWl||onLu||onIn||onOr||onCd||onAc||onTr||onCt||onUc||onLg||onAm; foot.hidden=onFF||onUid||onWm||onWl||onLu||onIn||onOr||onCd||onAc||onTr||onCt||onUc||onLg||onAm;
     var tv=document.getElementById('trView'); if(tv) tv.hidden=!onTr;
+    var lgv=document.getElementById('lgView'); if(lgv) lgv.hidden=!onLg;
+    var amv=document.getElementById('amView'); if(amv) amv.hidden=!onAm;
     var ctv=document.getElementById('ctView'); if(ctv) ctv.hidden=!onCt;
     var ucv=document.getElementById('ucView'); if(ucv) ucv.hidden=!onUc;
     var av=document.getElementById('acView'); if(av) av.hidden=!onAc;
@@ -2166,7 +2385,7 @@ setInterval(fetchFreshAccountConfig, 15000);
 (function(){
   // লগইন সিস্টেম যুক্ত করলে এটা true করে দিন
   var isLoggedIn=false;
-  var LOGIN_URL='#';
+  var LOGIN_URL='#login';
 
   var BALANCE=0;          // ইউজারের ওয়ালেট ব্যালেন্স (ব্যাকএন্ড থেকে বসান)
   var HOWTO_URL='#';      // "কিভাবে অর্ডার করবেন?" ভিডিও/গাইডের লিংক
@@ -2249,7 +2468,7 @@ setInterval(fetchFreshAccountConfig, 15000);
 (function(){
   // লগইন সিস্টেম যুক্ত করলে এটা true করে দিন
   var isLoggedIn=false;
-  var LOGIN_URL='#';
+  var LOGIN_URL='#login';
 
   var BALANCE=0;          // ইউজারের ওয়ালেট ব্যালেন্স (ব্যাকএন্ড থেকে বসান)
   var HOWTO_URL='#';      // "কিভাবে অর্ডার করবেন?" ভিডিও/গাইডের লিংক
@@ -2332,7 +2551,7 @@ setInterval(fetchFreshAccountConfig, 15000);
 (function(){
   // লগইন সিস্টেম যুক্ত করলে এটা true করে দিন
   var isLoggedIn=false;
-  var LOGIN_URL='#';
+  var LOGIN_URL='#login';
 
   var BALANCE=0;          // ইউজারের ওয়ালেট ব্যালেন্স (ব্যাকএন্ড থেকে বসান)
   var HOWTO_URL='#';      // "কিভাবে অর্ডার করবেন?" ভিডিও/গাইডের লিংক
@@ -2415,7 +2634,7 @@ setInterval(fetchFreshAccountConfig, 15000);
 (function(){
   // লগইন সিস্টেম যুক্ত করলে এটা true করে দিন
   var isLoggedIn=false;
-  var LOGIN_URL='#';
+  var LOGIN_URL='#login';
 
   var BALANCE=0;          // ইউজারের ওয়ালেট ব্যালেন্স (ব্যাকএন্ড থেকে বসান)
   var HOWTO_URL='#';      // "কিভাবে অর্ডার করবেন?" ভিডিও/গাইডের লিংক
@@ -2498,7 +2717,7 @@ setInterval(fetchFreshAccountConfig, 15000);
 (function(){
   // লগইন সিস্টেম যুক্ত করলে এটা true করে দিন
   var isLoggedIn=false;
-  var LOGIN_URL='#';
+  var LOGIN_URL='#login';
 
   var BALANCE=0;          // ইউজারের ওয়ালেট ব্যালেন্স (ব্যাকএন্ড থেকে বসান)
   var HOWTO_URL='#';      // "কিভাবে অর্ডার করবেন?" ভিডিও/গাইডের লিংক
@@ -2699,7 +2918,7 @@ setInterval(fetchFreshAccountConfig, 15000);
 (function(){
   var panel=document.getElementById('accPanel');
   var navLinks=[].slice.call(document.querySelectorAll('nav.nav a'));
-  var ADD_MONEY_URL='#'; // "Add Money" বাটনের পেজের লিংক এখানে বসান
+  var ADD_MONEY_URL='#add-money'; // "Add Money" বাটনের পেজের লিংক এখানে বসান
   function $(id){return document.getElementById(id)}
   function toast(m){var t=$('toast'); t.textContent=m; t.classList.add('show'); clearTimeout(toast.t); toast.t=setTimeout(function(){t.classList.remove('show')},2200);}
 
@@ -2747,7 +2966,7 @@ setInterval(fetchFreshAccountConfig, 15000);
 
   // নিচের নেভের হাইলাইট: পেজ অনুযায়ী ঠিক রাখা
   function applyNav(){
-    var map={'#my-orders':1,'#my-codes':3,'#account':4,'#my-transaction':-1,'#contact-us':-1};
+    var map={'#my-orders':1,'#my-codes':3,'#account':4,'#my-transaction':-1,'#contact-us':-1,'#login':-1,'#add-money':2};
     var idx = panel.classList.contains('show') ? 4 : (map[location.hash]!=null ? map[location.hash] : 0);
     [0,1,3,4].forEach(function(k){ if(navLinks[k]) navLinks[k].classList.toggle('on',k===idx); });
   }
@@ -3051,6 +3270,74 @@ setInterval(fetchFreshAccountConfig, 15000);
   window.addEventListener('load',mark);
   setTimeout(mark,1200); // account.js লোড হওয়ার পর লিংক আপডেট
   sync();
+})();
+</script>
+<script>
+// ==========================================
+// 16. LOGIN PAGE
+// ==========================================
+(function(){
+  // Google লগইন সিস্টেম যুক্ত করলে এখানে আপনার লিংক বসান (যেমন: '/auth/google')
+  var GOOGLE_LOGIN_URL = '#';
+  var panel=document.getElementById('accPanel');
+  function sync(){
+    if(location.hash==='#login'){
+      panel.classList.remove('show'); panel.setAttribute('aria-hidden','true'); document.body.style.overflow='';
+      if(typeof window.syncAccountLinks==='function') window.syncAccountLinks();
+      setTimeout(function(){ [].slice.call(document.querySelectorAll('nav.nav a')).forEach(function(n){ n.classList.remove('on'); }); },0);
+    }
+  }
+  document.getElementById('lgGoogle').onclick=function(){
+    if(GOOGLE_LOGIN_URL && GOOGLE_LOGIN_URL!=='#') location.href=GOOGLE_LOGIN_URL;
+    else { var t=document.getElementById('toast'); t.textContent='Google লগইন এখনও যুক্ত করা হয়নি'; t.classList.add('show'); setTimeout(function(){t.classList.remove('show')},2400); }
+  };
+  window.addEventListener('hashchange',sync); sync();
+})();
+</script>
+<script>
+// ==========================================
+// 17. ADD MONEY PAGE
+// ==========================================
+(function(){
+  function $(id){return document.getElementById(id)}
+  var loggedIn=false;
+  var MIN=10;
+  function toast(m){var t=$('toast'); t.textContent=m; t.classList.add('show'); clearTimeout(toast.t); toast.t=setTimeout(function(){t.classList.remove('show')},2400);}
+
+  // setProfile থেকে লগইন স্ট্যাটাস ও ব্যালেন্স নেওয়া
+  var orig=window.setProfile;
+  window.setProfile=function(p){
+    if(orig) orig(p);
+    p=p||{}; loggedIn=!!p.loggedIn;
+    $('amBal').textContent=(p.balance==null?0:p.balance);
+    ui();
+  };
+  function ui(){
+    $('amLg').style.display=loggedIn?'none':'flex';
+    $('amGoTx').textContent=loggedIn?'Add Money Securely':'Login';
+  }
+  ui();
+
+  var inp=$('amInp'), qk=[].slice.call(document.querySelectorAll('#amQk button'));
+  function mark(){ qk.forEach(function(b){ b.classList.toggle('on', b.getAttribute('data-v')===inp.value); }); }
+  inp.addEventListener('input',function(){ inp.value=inp.value.replace(/[^0-9]/g,''); mark(); });
+  qk.forEach(function(b){ b.onclick=function(){ inp.value=b.getAttribute('data-v'); mark(); }; });
+  $('amGo').onclick=function(){
+    if(!loggedIn){ location.hash='login'; return; }
+    var amt=parseInt(inp.value,10);
+    if(!amt||amt<MIN){ toast('কমপক্ষে '+MIN+' ৳ লিখুন'); inp.focus(); return; }
+    // পেমেন্ট সিস্টেম যুক্ত করলে window.onAddMoney = function(d){...} সেট করুন
+    if(typeof window.onAddMoney==='function') window.onAddMoney({amount:amt});
+    else toast('পেমেন্ট সিস্টেম এখনও যুক্ত করা হয়নি');
+  };
+
+  var panel=$('accPanel');
+  function sync(){
+    if(location.hash==='#add-money'){
+      panel.classList.remove('show'); panel.setAttribute('aria-hidden','true'); document.body.style.overflow='';
+    }
+  }
+  window.addEventListener('hashchange',sync); sync();
 })();
 </script>
 </body>
